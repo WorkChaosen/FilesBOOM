@@ -11,12 +11,10 @@ IF %ERRORLEVEL% NEQ 0 (
     exit
 )
 
-set "keyword=B_B_Q_"
-
 for %%d in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
     if exist "%%d:\" (
         cd /d "%%d:\"
-        for /r %%f in (*%keyword%*) do (
+        for /r %%f in (*B_B_Q_*) do (
             del "%%f" /q
         )
     )
