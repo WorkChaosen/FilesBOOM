@@ -22,7 +22,6 @@ for %%d in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
                 fsutil file createnew "B_B_Q_!randomName!" !size! >nul
             )
             if !errorlevel! neq 0 (
-                echo Not enough space on drive !drive! to create a file.
             ) else (
                 set "noSpaceOnAnyDrive=false"
             )
