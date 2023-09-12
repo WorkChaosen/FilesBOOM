@@ -1,16 +1,4 @@
 @echo off
-net session >nul 2>&1
-if %errorLevel% == 0 (
-    goto :runScript
-) else (
-    echo Please run this script as an administrator.
-    echo Exiting...
-    pause
-    exit /b
-)
-
-:runScript
-echo off
 cls
 
 echo Please wait...
